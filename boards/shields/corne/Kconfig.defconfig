@@ -1,3 +1,12 @@
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT
+    default y
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif
+
 if SHIELD_CORNE_DONGLE
 
 # Max 16 characters in keyboard name
