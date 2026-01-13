@@ -2,14 +2,14 @@
 
 #import "corne.dtsi"
 
-&physical_layout0 {
+&foostan_corne_6col_layout {
     transform = <&default_transform>;
 };
 
 / {
     chosen {
         zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &foostan_corne_6col_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -35,7 +35,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
         >;
     };
 
-    physical_layout0: physical_layout_0 {
+    foostan_corne_6col_layout: foostan_corne_6col_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
