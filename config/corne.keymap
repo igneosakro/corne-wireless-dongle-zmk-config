@@ -190,9 +190,9 @@
                 wasd {
                         display-name = "WASD";
                         bindings = <
-   &kp T               &kp TAB             &kp Q               &kp W               &kp E               &kp R                                   &kp GRAVE           &none               &kp UP              &none               &none               &kp BSPC
-   &kp G               &kp LSHIFT          &kp A               &kp S               &kp D               &kp F                                   &none               &kp LEFT            &kp DOWN            &kp RIGHT           &none               &kp DEL
-   &kp B               &kp LCTRL           &kp Z               &kp X               &kp C               &kp V                                   &none               &none               &none               &none               &none               &kp RET
+   &kp T               &kp TAB             &kp Q               &kp W               &kp E               &kp R                                   &kp GRAVE           &kp HOME            &kp UP              &kp END             &kp PG_UP           &kp BSPC
+   &kp G               &kp LSHIFT          &kp A               &kp S               &kp D               &kp F                                   &kp TILDE           &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN           &kp DEL
+   &kp B               &kp LCTRL           &kp Z               &kp X               &kp C               &kp V                                   &kp PSCRN           &kp F12             &none               &none               &none               &kp RET
                                                                &mo GAME            &kp LALT            &kp SPACE                               &kp RET             &kp RALT            &kp RGUI
                         >;
                 };
@@ -200,9 +200,9 @@
                 esdf {
                         display-name = "ESDF";
                         bindings = <
-   &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                   &kp GRAVE           &none               &kp UP              &none               &none               &kp BSPC
-   &kp LSHIFT          &kp A               &kp S               &kp D               &kp F               &kp G                                   &none               &kp LEFT            &kp DOWN            &kp RIGHT           &none               &kp DEL
-   &kp LCTRL           &kp Z               &kp X               &kp C               &kp V               &kp B                                   &none               &none               &none               &none               &none               &kp RET
+   &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                   &kp GRAVE           &kp HOME            &kp UP              &kp END             &kp PG_UP           &kp BSPC
+   &kp LSHIFT          &kp A               &kp S               &kp D               &kp F               &kp G                                   &kp TILDE           &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN           &kp DEL
+   &kp LCTRL           &kp Z               &kp X               &kp C               &kp V               &kp B                                   &kp PSCRN           &kp F12             &none               &none               &none               &kp RET
                                                                &mo GAME            &kp LALT            &kp SPACE                               &kp RET             &kp RALT            &kp RGUI
                         >;
                 };
