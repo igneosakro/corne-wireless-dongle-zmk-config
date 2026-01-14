@@ -3,9 +3,9 @@ include:
   # Your other keyboard parts here
   # -----------------------------------------
   # Change the board appropriately, you can use any board
-  - board: nice_nano_v2
+  - board: seeeduino_xiao_ble
     shield: corne_dongle
-    artifact-name: corne_dongle_nice_nano_v2
+    artifact-name: corne_dongle_xiao_ble
     
   # Add these cmake-args to the peripherals you wish to use with the dongle
   - board: nice_nano_v2
@@ -18,4 +18,6 @@ include:
     artifact-name: corne_right_nice_nano_v2
 
   - board: nice_nano_v2
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
     shield: settings_reset
