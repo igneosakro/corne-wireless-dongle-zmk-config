@@ -25,11 +25,17 @@
 
 #define KEY_TAB 0
 #define KEY_T 5
+#define KEY_Y 6
+#define KEY_BACKSPACE 11
 #define KEY_LSHIFT 12
 #define KEY_G 17
 #define KEY_H 18
 #define KEY_TILDE 23
 #define KEY_RSHIFT 23
+#define KEY_LCTRL 24
+#define KEY_B 29
+#define KEY_N 30
+#define KEY_RCTRL 35
 #define KEY_WIN 36
 #define KEY_LALT 37
 #define KEY_SPACE 38
@@ -126,6 +132,36 @@
                     bindings = <&bt BT_CLR>;
                     layers = <FUNCTION>;
                 };
+                combo_bt_disc_0 {
+                    timeout-ms = <100>;
+                    key-positions = <KEY_TAB KEY_T>;
+                    bindings = <&bt BT_DISC 0>;
+                    layers = <FUNCTION>;
+                };
+                combo_bt_disc_1 {
+                    timeout-ms = <100>;
+                    key-positions = <KEY_LSHIFT KEY_G>;
+                    bindings = <&bt BT_DISC 1>;
+                    layers = <FUNCTION>;
+                };
+                combo_bt_disc_2 {
+                    timeout-ms = <100>;
+                    key-positions = <KEY_LCTRL KEY_B>;
+                    bindings = <&bt BT_DISC 2>;
+                    layers = <FUNCTION>;
+                };
+                combo_bt_disc_3 {
+                    timeout-ms = <100>;
+                    key-positions = <KEY_Y KEY_BACKSPACE>;
+                    bindings = <&bt BT_DISC 3>;
+                    layers = <FUNCTION>;
+                };
+                combo_bt_disc_4 {
+                    timeout-ms = <100>;
+                    key-positions = <KEY_N KEY_RCTRL>;
+                    bindings = <&bt BT_DISC 4>;
+                    layers = <FUNCTION>;
+                };
         };
 
         
@@ -175,7 +211,7 @@
                         bindings = <
    &kp RA(GRAVE)       &kp MINUS           &kp RS(N2)          &kp LS(EQUAL)       &kp LS(MINUS)       &kp RA(N2)                              &kp RS(N4)          &kp GRAVE           &kp RS(GRAVE)       &kp LBKT            &kp SQT             &kp BSPC
    &kp RA(N1)          &kp RA(LBKT)        &kp RA(RBKT)        &kp LS(N8)          &kp LS(N9)          &kp LS(N6)                              &kp RS(N5)          &kp LS(N0)          &kp LS(LBKT)        &kp RA(N4)          &kp RA(N6)          &kp LS(NUHS)
-   &kp LS(N7)          &kp RA(SQT)         &kp RA(NUHS)        &kp EQUAL           &kp RS(N1)          &kp RA(N3)                              &kp RA(E)           &kp NUBS            &kp RS(NUBS)        &kp RS(N3)          &kp LS(SQT)         &kp NUHS
+   &kp LS(N7)          &kp RA(SQT)         &kp RA(NUHS)        &kp EQUAL           &kp RS(N1)          &kp RA(N3)                              &kp RA(E)           &kp RS(N3)          &kp NUBS            &kp RS(NUBS)        &kp LS(SQT)         &kp NUHS
                                                                &trans              &trans              &trans                                  &trans              &trans              &trans
                         >;
                 };
