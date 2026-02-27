@@ -6,6 +6,7 @@ include:
   - board: seeeduino_xiao_ble
     shield: corne_dongle
     artifact-name: corne_dongle_xiao_ble
+    snippet: zmk-usb-logging
     
   # Add these cmake-args to the peripherals you wish to use with the dongle
   - board: nice_nano_v2
