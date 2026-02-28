@@ -16,12 +16,12 @@
 #define BASE 0
 #define NUMBERS 1
 #define FUNCTION 2
-#define SYMBOLS 3
-#define MOUSE 4
-#define WASD 5
-#define GAME 6
-#define GAME_2 7
-#define GAME_FN 8
+#define MOUSE 3
+#define WASD 4
+#define GAME 5
+#define GAME_2 6
+#define GAME_FN 7
+#define SYMBOLS 8
 
 #define KEY_TAB 0
 #define KEY_T 5
@@ -194,16 +194,6 @@
                         >;
                 };
 
-                symbols {
-                        display-name = "Symbols";
-                        bindings = <
-   &kp RA(GRAVE)       &kp MINUS           &kp RS(N2)          &kp LS(EQUAL)       &kp LS(MINUS)       &kp RA(N2)                              &kp RS(N4)          &kp GRAVE           &kp RS(GRAVE)       &kp LBKT            &kp SQT             &kp BSPC
-   &kp RA(N1)          &kp RA(LBKT)        &kp RA(RBKT)        &kp LS(N8)          &kp LS(N9)          &kp LS(N6)                              &kp RS(N5)          &kp LS(N0)          &kp LS(LBKT)        &kp RA(N4)          &kp RA(N6)          &kp LS(NUHS)
-   &kp LS(N7)          &kp RA(SQT)         &kp RA(NUHS)        &kp EQUAL           &kp RS(N1)          &kp RA(N3)                              &kp RA(E)           &kp RS(N3)          &kp NUBS            &kp RS(NUBS)        &kp LS(SQT)         &kp NUHS
-                                                               &trans              &trans              &trans                                  &trans              &trans              &trans
-                        >;
-                };
-
                 mouse {
                         display-name = "Mouse";
                         bindings = <
@@ -230,7 +220,7 @@
    &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                   &kp Y               &kp U               &kp I               &kp O               &kp P               &kp BSPC
    &kp LSHIFT          &kp A               &kp S               &kp D               &kp F               &kp G                                   &kp H               &kp J               &kp K               &kp L               &kp SEMI            &mt RSHIFT SQT
    &kp LCTRL           &kp Z               &kp X               &kp C               &kp V               &kp B                                   &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH            &kp RCTRL
-                                                               &kp LALT            &mo GAME_FN         &kp SPACE                               &kp RET             &mo SYMBOLS         &kp DEL
+                                                               &kp LALT            &mo GAME_FN         &kp SPACE                               &kp RET             &mo SYMBOLS          &kp DEL
                         >;
                 };
 
@@ -251,6 +241,16 @@
    &mt LSHIFT CAPS     &kp N6              &kp N7              &kp N8              &kp N9              &kp N0                                  &kp TILDE           &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN           &kp DEL
    &kp LCTRL           &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                  &kp PSCRN           &kp F12             &none               &none               &none               &kp RET
                                                                &kp LALT            &none               &kp SPACE                               &kp RET             &kp RALT            &kp RGUI
+                        >;
+                };
+
+                symbols {
+                        display-name = "Symbols";
+                        bindings = <
+   &kp RA(GRAVE)       &kp MINUS           &kp RS(N2)          &kp LS(EQUAL)       &kp LS(MINUS)       &kp RA(N2)                              &kp RS(N4)          &kp GRAVE           &kp RS(GRAVE)       &kp LBKT            &kp SQT             &kp BSPC
+   &kp RA(N1)          &kp RA(LBKT)        &kp RA(RBKT)        &kp LS(N8)          &kp LS(N9)          &kp LS(N6)                              &kp RS(N5)          &kp LS(N0)          &kp LS(LBKT)        &kp RA(N4)          &kp RA(N6)          &kp LS(NUHS)
+   &kp LS(N7)          &kp RA(SQT)         &kp RA(NUHS)        &kp EQUAL           &kp RS(N1)          &kp RA(N3)                              &kp RA(E)           &kp RS(N3)          &kp NUBS            &kp RS(NUBS)        &kp LS(SQT)         &kp NUHS
+                                                               &trans              &trans              &trans                                  &trans              &trans              &trans
                         >;
                 };
         };
