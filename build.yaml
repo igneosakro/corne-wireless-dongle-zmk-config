@@ -3,22 +3,22 @@ include:
   # Your other keyboard parts here
   # -----------------------------------------
   # Change the board appropriately, you can use any board
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: corne_dongle prospector_adapter
     snippet: studio-rpc-usb-uart
     artifact-name: corne_dongle_xiao_ble
     
   # Add these cmake-args to the peripherals you wish to use with the dongle
-  - board: nice_nano
+  - board: nice_nano//zmk@2.0.0
     shield: corne_left nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: corne_left_nice_nano
-  - board: nice_nano
+  - board: nice_nano//zmk@2.0.0
     shield: corne_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: corne_right_nice_nano
 
-  - board: nice_nano
+  - board: nice_nano//zmk@2.0.0
     shield: settings_reset
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
