@@ -20,7 +20,7 @@
 #define MOUSE 4
 #define WASD 5
 #define GAME 6
-#define GAME2 7
+#define GAME_2 7
 #define GAME_FN 8
 
 #define KEY_TAB 0
@@ -93,20 +93,20 @@
                 combo_to_game2 {
                     timeout-ms = <50>;
                     key-positions = <KEY_SPACE KEY_ENTER KEY_RALT KEY_DEL>;
-                    bindings = <&to GAME2>;
+                    bindings = <&to GAME_2>;
                     layers = <BASE>;
                 };
                 combo_to_base {
                     timeout-ms = <50>;
                     key-positions = <KEY_WIN KEY_LALT KEY_SPACE>;
                     bindings = <&to BASE>;
-                    layers = <MOUSE WASD GAME GAME2>;
+                    layers = <MOUSE WASD GAME GAME_2>;
                 };
                 combo_to_base_alt {
                     timeout-ms = <50>;
                     key-positions = <KEY_ENTER KEY_RALT KEY_DEL>;
                     bindings = <&to BASE>;
-                    layers = <MOUSE WASD GAME GAME2>;
+                    layers = <MOUSE WASD GAME GAME_2>;
                 };
                 combo_caps_word {
                     timeout-ms = <50>;
@@ -230,11 +230,11 @@
    &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                   &kp Y               &kp U               &kp I               &kp O               &kp P               &kp BSPC
    &kp LSHIFT          &kp A               &kp S               &kp D               &kp F               &kp G                                   &kp H               &kp J               &kp K               &kp L               &kp SEMI            &mt RSHIFT SQT
    &kp LCTRL           &kp Z               &kp X               &kp C               &kp V               &kp B                                   &kp N               &kp M               &kp COMMA           &kp DOT             &kp FSLH            &kp RCTRL
-                                                               &kp LALT            &mo GAME_FN         &kp SPACE                               &kp RET             &kp RALT            &kp DEL
+                                                               &kp LALT            &mo GAME_FN         &kp SPACE                               &kp RET             &mo SYMBOLS         &kp DEL
                         >;
                 };
 
-                game2 {
+                game_2 {
                         display-name = "Game 2";
                         bindings = <
    &kp TAB             &kp Q               &kp W               &kp E               &kp R               &kp T                                   &kp GRAVE           &kp HOME            &kp UP              &kp END             &kp PG_UP           &kp BSPC
