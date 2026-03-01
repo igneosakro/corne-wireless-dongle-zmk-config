@@ -186,7 +186,7 @@
                         bindings = <
    &kp ESC             &kp N6              &kp N7              &kp N8              &kp N9              &kp N0                                  &kp KP_SLASH        &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_MINUS        &kp BSPC
    &mt LSHIFT CAPS     &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                  &kp KP_ASTERISK     &kp KP_N4           &kp KP_N5           &kp KP_N6           &kp KP_PLUS         &mt RSHIFT KP_NUMLOCK
-   &mt LCTRL GRAVE     &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                  &kp KP_N0           &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_DOT          &mt RCTRL C_AL_CALC
+   &mt LCTRL GRAVE     &kp NUBS            &kp MINUS           &kp EQUAL           &kp LBKT            &kp RBKT                                &kp KP_N0           &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_DOT          &mt RCTRL C_AL_CALC
                                                                &trans              &trans              &trans                                  &trans              &trans              &trans
                         >;
                 };
