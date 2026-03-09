@@ -18,9 +18,6 @@ include:
     artifact-name: corne_right_nice_nano_v2
 
   # reset
-  - board: xiao_ble//zmk
-    shield: settings_reset
-    artifact-name: settings_reset_xiao_ble
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset_nice_nano
