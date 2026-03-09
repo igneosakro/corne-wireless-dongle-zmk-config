@@ -3,9 +3,9 @@ include:
   # Your other keyboard parts here
   # -----------------------------------------
   # Change the board appropriately, you can use any board
-  - board: xiao_ble//zmk
+  - board: nice_nano@2.0.0//zmk
     shield: corne_dongle dongle_display
-    artifact-name: corne_dongle_xiao_ble
+    artifact-name: corne_dongle_nice_nano_v2
     
   # Add these cmake-args to the peripherals you wish to use with the dongle
   - board: nice_nano@2.0.0//zmk
