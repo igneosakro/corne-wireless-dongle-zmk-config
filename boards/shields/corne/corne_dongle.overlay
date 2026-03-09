@@ -41,6 +41,6 @@
 
 / {
     chosen {
-        zephyr,display = &ssd1306;
+        zephyr,display = &oled;
     };
 };
