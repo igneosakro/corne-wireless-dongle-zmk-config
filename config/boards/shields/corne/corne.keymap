@@ -127,36 +127,6 @@
                     bindings = <&bt BT_CLR>;
                     layers = <FUNCTION>;
                 };
-                combo_bt_disc_0 {
-                    timeout-ms = <100>;
-                    key-positions = <KEY_TAB KEY_T>;
-                    bindings = <&bt BT_DISC 0>;
-                    layers = <FUNCTION>;
-                };
-                combo_bt_disc_1 {
-                    timeout-ms = <100>;
-                    key-positions = <KEY_LSHIFT KEY_G>;
-                    bindings = <&bt BT_DISC 1>;
-                    layers = <FUNCTION>;
-                };
-                combo_bt_disc_2 {
-                    timeout-ms = <100>;
-                    key-positions = <KEY_LCTRL KEY_B>;
-                    bindings = <&bt BT_DISC 2>;
-                    layers = <FUNCTION>;
-                };
-                combo_bt_disc_3 {
-                    timeout-ms = <100>;
-                    key-positions = <KEY_Y KEY_BACKSPACE>;
-                    bindings = <&bt BT_DISC 3>;
-                    layers = <FUNCTION>;
-                };
-                combo_bt_disc_4 {
-                    timeout-ms = <100>;
-                    key-positions = <KEY_N KEY_RCTRL>;
-                    bindings = <&bt BT_DISC 4>;
-                    layers = <FUNCTION>;
-                };
         };
 
         
@@ -216,7 +186,7 @@
                         bindings = <
    &kp ESC             &kp CAPS            &kp Q               &kp W               &kp E               &kp R                                   &msc SCRL_UP        &msc SCRL_LEFT      &mmv MOVE_UP        &msc SCRL_RIGHT     &msc SCRL_UP        &kp BSPC
    &kp TAB             &kp LSHFT           &kp A               &kp S               &kp D               &kp F                                   &msc SCRL_DOWN      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN      &kp RSHFT
-   &kp LCTRL           &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                  &none               &none               &none               &none               &none               &kp RCTRL
+   &kp LCTRL           &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                  &bt BT_DISC 0       &bt BT_DISC 1       &bt BT_DISC 2       &bt BT_DISC 3       &bt BT_DISC 4       &kp RCTRL
                                                                &kp G               &kp LALT            &kp SPACE                               &mkp MB1            &mkp MB3            &mkp MB2
                         >;
                 };
