@@ -3,7 +3,7 @@ include:
   # Your other keyboard parts here
   # -----------------------------------------
   # Change the board appropriately, you can use any board
-  - board: xiao_ble//zmk
+  - board: xiao_ble
     shield: corne_dongle dongle_display
     artifact-name: corne_dongle_xiao_ble
     
