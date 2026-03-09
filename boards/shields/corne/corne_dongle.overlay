@@ -1,14 +1,18 @@
 #include "corne.dtsi"
 
-&kscan0 {
-    col-gpios
-        = <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 20 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 21 GPIO_ACTIVE_HIGH>
-        ;
+/ {
+    chosen {
+        zephyr,display = &oled;
+        zmk,kscan = &mock_kscan;
+        wakeup-source;
+    };
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
 };
 
 &pro_micro_i2c {
@@ -27,11 +31,5 @@
         com-invdir;
         inversion-on;
         prechargep = <0x22>;
-    };
-};
-
-/ {
-    chosen {
-        zephyr,display = &oled;
     };
 };
