@@ -6,27 +6,6 @@
 
 #include "corne.dtsi"
 
-/ {
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,physical-layout = &physical_layout0;
-        wakeup-source;
-    };
-
-    mock_kscan: kscan_1 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
-
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        transform = <&default_transform>;
-    };
-};
-
 &kscan0 {
     row-gpios
         = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
