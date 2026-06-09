@@ -21,10 +21,12 @@
 #define SYMBOLS 3
 #define SYM 3
 #define MOUSE 4
-#define WASD 5
-#define ESDF 6
-#define RETRO 7
-#define GAMING 8
+#define MICE 5
+#define WASD 6
+#define ESDF 7
+#define RETRO 8
+#define GAMING 9
+#define ARROWS 10
 
 #define KEY_TAB 0
 #define KEY_T 5
@@ -95,6 +97,12 @@
                     bindings = <&to MOUSE>;
                     layers = <BASE>;
                 };
+                combo_to_mice {
+                    timeout-ms = <50>;
+                    key-positions = <KEY_WIN KEY_LALT>;
+                    bindings = <&to MICE>;
+                    layers = <BASE>;
+                };
                 combo_to_wasd {
                     timeout-ms = <50>;
                     key-positions = <KEY_WIN KEY_LALT KEY_SPACE>;
@@ -119,17 +127,23 @@
                     bindings = <&to RETRO>;
                     layers = <BASE>;
                 };
+                combo_to_arrows {
+                    timeout-ms = <50>;
+                    key-positions = <KEY_WIN KEY_LCTRL>;
+                    bindings = <&to ARROWS>;
+                    layers = <BASE>;
+                };
                 combo_to_base {
                     timeout-ms = <50>;
                     key-positions = <KEY_WIN KEY_LALT KEY_SPACE>;
                     bindings = <&to BASE>;
-                    layers = <MOUSE WASD ESDF RETRO>;
+                    layers = <MOUSE MICE WASD ESDF RETRO ARROWS>;
                 };
                 combo_to_base_alt {
                     timeout-ms = <50>;
                     key-positions = <KEY_ENTER KEY_RALT KEY_DEL>;
                     bindings = <&to BASE>;
-                    layers = <MOUSE WASD ESDF RETRO>;
+                    layers = <MOUSE MICE WASD ESDF RETRO ARROWS>;
                 };
                 combo_to_base_opt {
                     timeout-ms = <50>;
@@ -213,6 +227,16 @@
                         >;
                 };
 
+                mice {
+                        display-name = "Mice";
+                        bindings = <
+   &kp ESC             &mkp MB5            &msc SCRL_LEFT      &mmv MOVE_UP        &msc SCRL_RIGHT     &msc SCRL_UP                            &kp INS             &kp HOME            &kp UP              &kp END             &kp PG_UP           &kp BSPC
+   &kp LSHIFT          &mkp MB4            &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN                          &kp PAUSE_BREAK     &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN           &kp RSHIFT
+   &kp LCTRL           &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                  &kp PSCRN           &kp C_PP            &kp C_MUTE          &kp C_VOL_DN        &kp C_VOL_UP        &kp RCTRL
+                                                               &mkp MB2            &mkp MB3            &mkp MB1                                &trans              &trans              &trans
+                        >;
+                };
+
                 wasd {
                         display-name = "WASD";
                         bindings = <
@@ -250,6 +274,16 @@
    &mt LSHIFT CAPS     &kp N1              &kp N2              &kp N3              &kp N4              &kp N5                                  &kp TILDE           &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN           &kp DEL
    &kp LCTRL           &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                  &kp PSCRN           &kp F12             &none               &none               &none               &kp RET
                                                                &kp LALT            &none               &kp SPACE                               &kp RET             &kp RALT            &kp RGUI
+                        >;
+                };
+
+                arrows {
+                        display-name = "Arrows";
+                        bindings = <
+   &kp TAB             &kp GRAVE           &kp HOME            &kp UP              &kp END             &kp PG_UP                               &msc SCRL_UP        &msc SCRL_LEFT      &mmv MOVE_UP        &msc SCRL_RIGHT     &mkp MB5            &kp BSPC
+   &kp LSHIFT          &kp TILDE           &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN                               &msc SCRL_DOWN      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &mkp MB4            &kp RSHFT
+   &kp LCTRL           &none               &none               &none               &none               &none                                   &none               &none               &none               &none               &none               &kp RCTRL
+                                                               &kp RET             &kp LALT            &kp SPACE                               &mkp MB1            &mkp MB3            &mkp MB2
                         >;
                 };
         };
